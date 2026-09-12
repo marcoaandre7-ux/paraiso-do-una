@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-12T18:42:59.661Z",
+  "title": "Design System: Paraíso do Una",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Forest"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Natural paper"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Forest ink"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted foliage"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Gilda Display",
+        "purpose": "Large photographic invitations."
+      },
+      "body": {
+        "displayName": "Manrope",
+        "purpose": "Readable descriptions and controls."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared photographic and interaction easing."
+      },
+      {
+        "name": "forest-arrival",
+        "value": "1.4s",
+        "purpose": "Hero photo scales from 1.045 to 1."
+      },
+      {
+        "name": "veranda-open",
+        "value": ".85s",
+        "purpose": "Heading clip and 15px entrance."
+      },
+      {
+        "name": "soft-arrival",
+        "value": ".9s",
+        "purpose": "Hero supporting copy and action entrance."
+      },
+      {
+        "name": "space-photo",
+        "value": "400ms",
+        "purpose": "Selected space photograph transition."
+      },
+      {
+        "name": "space-panel",
+        "value": "280ms",
+        "purpose": "Selected space panel transition."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "No CSS animations or smooth scrolling; .01ms CSS transitions; no scripted tab animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet-max",
+        "value": "960px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "700px"
+      },
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main navigation or enquiry action.",
+      "html": "<a class=\"ds-control ds-button\" href=\"#reservas\">Consultar pelo WhatsApp <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:15px 25px;background:var(--forest,#253b2f);color:#fff;border:1px solid transparent;border-radius:3px;font:500 14px/1.7 var(--body,'Manrope',Arial,sans-serif);text-decoration:none;cursor:pointer;transition:background .22s,color .22s}.ds-button:hover{background:#3c5440}.ds-button svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-button:hover svg{transform:translateX(3px)}.ds-control:focus-visible{outline:3px solid #8d9b57;outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-button svg{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Pale button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Readable action over a photograph.",
+      "html": "<a class=\"ds-control ds-button ds-light\" href=\"#chales\">Encontre o seu lugar <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:15px 25px;background:var(--forest,#253b2f);color:#fff;border:1px solid transparent;border-radius:3px;font:500 14px/1.7 var(--body,'Manrope',Arial,sans-serif);text-decoration:none;cursor:pointer;transition:background .22s,color .22s}.ds-button:hover{background:#3c5440}.ds-button svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-button:hover svg{transform:translateX(3px)}.ds-control:focus-visible{outline:3px solid #8d9b57;outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-button svg{transition-duration:.01ms}}.ds-light{background:var(--paper,#f6f5f0);color:var(--ink,#263a2e)}.ds-light:hover{background:white}"
+    },
+    {
+      "name": "Compact button",
+      "kind": "button",
+      "refersTo": "button-small",
+      "description": "Header enquiry action.",
+      "html": "<a class=\"ds-control ds-button ds-small\" href=\"#reservas\">Planejar minha estadia <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:15px 25px;background:var(--forest,#253b2f);color:#fff;border:1px solid transparent;border-radius:3px;font:500 14px/1.7 var(--body,'Manrope',Arial,sans-serif);text-decoration:none;cursor:pointer;transition:background .22s,color .22s}.ds-button:hover{background:#3c5440}.ds-button svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-button:hover svg{transform:translateX(3px)}.ds-control:focus-visible{outline:3px solid #8d9b57;outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-button svg{transition-duration:.01ms}}.ds-small{min-height:46px;padding:11px 18px;gap:18px}"
+    },
+    {
+      "name": "Date input",
+      "kind": "input",
+      "refersTo": "date-input",
+      "description": "Labelled arrival date; native date-picker interaction.",
+      "html": "<label class=\"ds-date-label\">Sua chegada<input class=\"ds-control ds-date\" type=\"date\" required></label>",
+      "css": ".ds-date-label{display:flex;flex-direction:column;gap:10px;font:600 14px/1.7 var(--body,'Manrope',Arial,sans-serif);color:var(--ink,#263a2e)}.ds-date{min-width:0;background:transparent;padding:15px 12px;border:1px solid #a9b3a1;border-radius:3px;font:400 15px/1.7 var(--body,'Manrope',Arial,sans-serif);color:var(--ink,#263a2e);height:54px;caret-color:var(--forest,#253b2f)}.ds-control:focus-visible{outline:3px solid #8d9b57;outline-offset:6px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Quiet desktop anchor navigation with animated underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a class=\"ds-control\" href=\"#refugio\">O refúgio</a><a class=\"ds-control\" href=\"#chales\">Os chalés</a><a class=\"ds-control\" href=\"#galeria\">Galeria</a></nav>",
+      "css": ".ds-nav{display:flex;gap:34px;align-items:center;font:400 14px/1.7 var(--body,'Manrope',Arial,sans-serif);color:var(--ink,#263a2e)}.ds-nav a{position:relative;padding:10px 0;color:inherit;text-decoration:none}.ds-nav a:after{content:'';position:absolute;bottom:6px;left:0;right:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s}.ds-nav a:hover:after{transform:scaleX(1)}.ds-control:focus-visible{outline:3px solid #8d9b57;outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-nav a:after{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Text link",
+      "kind": "button",
+      "description": "Underlined secondary action.",
+      "html": "<a class=\"ds-control ds-link\" href=\"#galeria\">Um olhar por aqui <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-link{display:inline-flex;gap:22px;align-items:center;border-bottom:1px solid currentColor;padding-bottom:7px;font:600 14px/1.7 var(--body,'Manrope',Arial,sans-serif);color:var(--ink,#263a2e);text-decoration:none;transition:gap .25s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-link:hover{gap:30px}.ds-link svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.ds-control:focus-visible{outline:3px solid #8d9b57;outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-link{transition-duration:.01ms}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A veranda onto the landscape",
+    "overview": "A real woodland retreat opens like a veranda onto its own photographic landscape. The original monochrome logo and supplied photographs anchor a calm, spacious visual system; forest tones and a pale natural canvas connect the interface to the timber, river and vegetation visible in the images.\n\nThis records the implemented website, not a formal official brand guide. Gilda Display supplies the expressive voice while Manrope keeps navigation, descriptions and enquiries clear.",
+    "keyCharacteristics": [
+      "Original monochrome logo and real location photography.",
+      "Large serif invitations with quiet sans-serif controls.",
+      "Flat natural surfaces, restrained corners and purposeful motion."
+    ],
+    "rules": [],
+    "dos": [
+      "Do preserve the original logo, real property photography and visible photographic credit.",
+      "Do retain readable photographic overlays, keyboard focus and reduced-motion behavior.",
+      "Do use the established serif/sans pairing and responsive spacing."
+    ],
+    "donts": [
+      "Don't present the inferred nature palette as an official brand specification.",
+      "Don't substitute invented property imagery or unsupported accommodation claims.",
+      "Don't imply that a date enquiry confirms a reservation."
+    ]
+  }
+}
