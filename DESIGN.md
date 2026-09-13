@@ -127,9 +127,9 @@ Buttons are restrained filled rectangles with an inline arrow. Primary, pale and
 
 Navigation uses quiet Manrope links with a growing underline. The mobile menu button exposes its expanded state and closes on link activation or Escape.
 
-The space selector uses a tablist, selected underline, roving tab focus, Left/Right/Home/End navigation and a labelled panel. Changing a tab updates its photograph, caption, prose and gallery target.
+The home page uses a five-item chalet directory with a featured first card and direct links to individual accommodation pages. Detail pages use a distinct split hero, accommodation facts, photographic gallery and enquiry area.
 
-The native modal gallery provides labelled controls, captions, seven images, arrow-key navigation, Escape dismissal, swipe navigation and focus restoration. Date inputs have visible labels and native required validation; submission checks arrival and departure order, announces errors politely and opens a prepared WhatsApp enquiry. Confirmation remains with the host.
+The native modal gallery provides labelled controls, captions, seven images on the home page and three mapped images on each detail page, with arrow-key navigation, Escape dismissal, swipe navigation and focus restoration. Detail-page date and guest inputs have visible labels and native required validation; submission checks arrival and departure order, announces errors politely and opens a prepared WhatsApp enquiry naming the selected chalé. Confirmation remains with the host.
 
 Motion is limited to the hero entrance, photo/tab transitions, hover feedback and dialog entrance. Reduced-motion preference disables CSS animation and smooth scrolling, minimizes transitions and bypasses the scripted tab animations.
 
@@ -142,4 +142,3 @@ Motion is limited to the hero entrance, photo/tab transitions, hover feedback an
 - Don't present the inferred nature palette as an official brand specification.
 - Don't substitute invented property imagery or unsupported accommodation claims.
 - Don't imply that a date enquiry confirms a reservation.
-
