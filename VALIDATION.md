@@ -8,5 +8,6 @@
 - Reduced-motion behavior, dialog focus return, arrow-key tabs and gallery controls inspected in source.
 - The main page exposes five chalet cards and contains no booking form. Five distinct detail routes serve Chalé 1 through Chalé 5; each detail route contains its own gallery and enquiry form.
 - Detail-route browser checks confirmed unique document titles, one form per route, zero broken images after lazy assets were loaded, no horizontal overflow, and WhatsApp message text containing the selected chalé and guest count.
+- Chalé 4 now includes the supplied AI video as a scroll-driven story, with a visible AI disclaimer, a real-photo placeholder section, and reduced-motion fallback to the poster frame.
 - The design detector ran once in degraded regex mode because parser dependencies were absent. Its layout-transition concern was addressed; old parent-project palette advisories do not define this isolated project's identity. This is not a full automated WCAG audit.
 - Images were downloaded from the supplied Lightroom album and official Linktree avatar, optimized, and retain embedded provenance. Asset origin details are also in ASSET-SOURCES.json.

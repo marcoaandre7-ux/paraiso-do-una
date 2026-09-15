@@ -129,9 +129,9 @@ Navigation uses quiet Manrope links with a growing underline. The mobile menu bu
 
 The home page uses a five-item chalet directory with a featured first card and direct links to individual accommodation pages. Detail pages use a distinct split hero, accommodation facts, photographic gallery and enquiry area.
 
-The native modal gallery provides labelled controls, captions, seven images on the home page and three mapped images on each detail page, with arrow-key navigation, Escape dismissal, swipe navigation and focus restoration. Detail-page date and guest inputs have visible labels and native required validation; submission checks arrival and departure order, announces errors politely and opens a prepared WhatsApp enquiry naming the selected chalé. Confirmation remains with the host.
+The native modal gallery provides labelled controls, captions, seven images on the home page and three mapped images on each detail page, with arrow-key navigation, Escape dismissal, swipe navigation and focus restoration. Detail-page date and guest inputs have visible labels and native required validation; submission checks arrival and departure order, announces errors politely and opens a prepared WhatsApp enquiry naming the selected chalé. Confirmation remains with the host. Chalé 4 adds a scroll-driven video story: the supplied AI visualization stays pinned while scroll progress seeks the video, with a clear AI disclaimer and a reserved section for future real photographs.
 
-Motion is limited to the hero entrance, photo/tab transitions, hover feedback and dialog entrance. Reduced-motion preference disables CSS animation and smooth scrolling, minimizes transitions and bypasses the scripted tab animations.
+Motion is limited to the hero entrance, photo/tab transitions, hover feedback, dialog entrance and the authored Chalé 4 scroll story. Reduced-motion preference disables CSS animation and smooth scrolling, keeps the story on its poster frame, and minimizes the scripted video movement.
 
 ## Do's and Don'ts
 
