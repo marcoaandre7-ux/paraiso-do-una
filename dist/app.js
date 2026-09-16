@@ -51,3 +51,5 @@ if(!document.body.dataset.detail){const card=document.querySelector('a[href="/ch
 
 // Capture gallery activation early so touch/click behaves consistently across browsers.
 (()=>{document.addEventListener('click',e=>{const button=e.target.closest?.('.real-photo-button');if(!button)return;const dlg=document.getElementById('lightbox');if(!dlg)return;e.preventDefault();e.stopPropagation();previousFocus=button;currentPhoto=Number(button.dataset.gallery||0);renderPhoto();if(!dlg.open)dlg.showModal();document.getElementById('lightbox-close')?.focus()},true)})();
+
+(()=>{const openPhoto=button=>{const dlg=document.getElementById('lightbox');if(!dlg)return;previousFocus=button;currentPhoto=Number(button.dataset.gallery||0);renderPhoto();if(!dlg.open)dlg.showModal();document.getElementById('lightbox-close')?.focus()};document.querySelectorAll('.real-photo-button').forEach(button=>button.addEventListener('pointerup',e=>{e.preventDefault();openPhoto(button)},{passive:false}))})();
